@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffed;
+}
+
+/* ubicacion de todo el contenido  */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+
+/* inicio del main*/
+.globalContainer{
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid #fbc02d;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    width: 90%;
+}
+.details{
+    width: 100%;
+}
+#progressLine{
+    width: 100%;
+    height: 10px;
+    background-color: #f9e79f;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+#progress{
+    width: 70%;
+    height: 10px;
+    background-color: #fbc02d;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: #fbc02d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* fin del main */
+
+/* Inicio formulario de añadir tarea*/
+form{
+    margin-top: 40px;
+    width: 90%;
+}
+input{
+    padding: 11px;
+    background-color: #fbc02d;
+    border: 2px solid #fbc02d;
+    border-radius: 30px;
+    width: 87%;
+    outline: none;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fbc02d;
+    cursor: pointer;
+    color: #fbc02d;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #f9e79f;
+    margin-left: 10px;
+}
+button:hover{
+    scale: 1.2;
+}
+#taskList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    width: 90%;
+    list-style: none;
+}
+.taskItem{
+    display: flex;
+    background-color: #fbc02d;
+    padding: 7px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.task{
+    width: 77%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px;
+}
+.task p {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.task input {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.taskItem i {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px;
+    color: #fbc02d;
+    background-color: #f9e79f;
+}
+.taskItem i:hover{
+    color: black;
+}
+.icons{
+    background-color: #f9e79f;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
+.completed p{
+    text-decoration: line-through;
+    color: green;
+
+}
